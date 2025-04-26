@@ -1,0 +1,162 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+.game-container {
+    width: 80%;
+    max-width: 600px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+h1 {
+    color: #333;
+}
+
+#round-selection {
+    margin-bottom: 20px;
+}
+
+#round-selection button {
+    padding: 10px 15px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+#round-selection button:hover {
+    background-color: #367c39;
+}
+
+#round-selection button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+}
+
+#game-area {
+    display: none;
+    text-align: center;
+}
+
+.code-box {
+    background-color: #e0e0e0;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    padding: 15px;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 5px;
+    font-family: monospace;
+    white-space: pre-wrap;
+    word-break: break-all;
+    text-align: left;
+}
+
+#bug-form {
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#bug-form input {
+    padding: 10px;
+    width: 90%;
+    max-width: 380px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    box-sizing: border-box; 
+}
+
+#bug-form button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #008CBA;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease; 
+}
+
+#bug-form button:hover {
+    background-color: #007399;
+}
+
+.feedback {
+    margin-bottom: 20px;
+    font-weight: bold;
+    min-height: 24px;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    font-size: 16px;
+}
+
+.timer {
+    color: #333;
+}
+
+.score {
+    color: #333;
+}
+
+#next-bug-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #4CAF50;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
+    display: none;
+    margin-top: 10px;
+    transition: background-color 0.3s ease; 
+}
+
+#next-bug-button:hover {
+    background-color: #367c39;
+}
+
+#unlock-message {
+    margin-top: 10px;
+    font-size: 0.9em;
+    color: gray;
+}
+
+/* Media query for larger screens (e.g., tablets and desktops) */
+@media (min-width: 768px) {
+    #bug-form {
+        flex-direction: row;
+        justify-content: center;
+    }
+    #bug-form input {
+        margin-bottom: 0;
+        margin-right: 10px;
+        width: auto;
+        flex: 1;
+        min-width: 200px;
+    }
+    #bug-form button {
+        margin-top: 0;
+    }
+}
