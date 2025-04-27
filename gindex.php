@@ -11,7 +11,7 @@ if (!isset($_SESSION['score'])) {
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bug Hunter</title>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="gstyles.css">
 </head>
 <body>
     <div class="game-container">
