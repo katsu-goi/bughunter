@@ -39,6 +39,6 @@ if (!isset($_SESSION['score'])) {
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="gscript.js"></script>
 </body>
 </html>
